@@ -1,0 +1,16 @@
+{
+  "name": "mongo-express-example",
+  "version": "1.0.0",
+  "description": "example server using mongodb and express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "rob herley",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^3.2.2",
+    "morgan": "^1.9.1"
+  }
+}
