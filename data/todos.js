@@ -84,7 +84,7 @@ async function update(id, newTitle, newTask) {
   if (typeof newTask === 'string') {
     replacedFields.task = newTask;
   }
-  if (Object.keys(replacedFields) === 0) {
+  if (Object.keys(replacedFields).length === 0) {
     throw 'Must specify either newTitle or newTask';
   }
   const todos = await todosCollection();

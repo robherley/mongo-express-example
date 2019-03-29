@@ -74,7 +74,7 @@ async function update(id, newName, newRole) {
   if (typeof newRole === 'string') {
     replacedFields.role = newRole;
   }
-  if (Object.keys(replacedFields) === 0) {
+  if (Object.keys(replacedFields).length === 0) {
     throw 'Must specify either newName or newRole';
   }
   const users = await usersCollection();
